@@ -24,10 +24,10 @@ void main() {
   final divide = (num a, num b) => a / b;
   final mult = (num a, num b) => a * b;
 
-  print(calculate(1, 2, sum));
-  print(calculate(1, 2, diff));
-  print(calculate(1, 2, divide));
-  print(calculate(1, 2, mult));
+//   print(calculate(1, 2, sum));
+//   print(calculate(1, 2, diff));
+//   print(calculate(1, 2, divide));
+//   print(calculate(1, 2, mult));
 }
 
 calculate(num a, 
