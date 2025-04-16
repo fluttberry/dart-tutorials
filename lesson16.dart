@@ -1,19 +1,18 @@
+enum Pet { 
+    dog ('Dog'), cat ('Cat'), bird ('Bird');
+    const Pet(this.localization);
+    final String localization;
+     }
+
 void main() {
-  print(greaterOrLess(2, 2));
-}
+  final vasiaPet = Pet.dog;
+  final stasPet = Pet.cat;
+  
+  print(vasiaPet.index);
+  print(vasiaPet.name);
+  
 
-String greaterOrLess(int a, int b) {
-  // Long version
-  // if (a > b) {
-  //   return 'more';
-  // }
-  // return 'less';
-
-  // Short version
-  return a == b
-      ? 'equal'
-      : a > b
-      ? 'more'
-      : 'less';
+  void _printPetName (Pet pet) {
+    print(pet.localization);
+  }
 }
- 

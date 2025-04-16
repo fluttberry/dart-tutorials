@@ -1,19 +1,19 @@
-void main (){
-try {
-  print( divide (1, 0));
-} catch (e) {
-  print('an error occured\n' + e.toString());
-  
-}
-  
+void main() {
+  print(greaterOrLess(2, 2));
 }
 
+String greaterOrLess(int a, int b) {
+  // Long version
+  // if (a > b) {
+  //   return 'more';
+  // }
+  // return 'less';
 
-num divide (num a, num b,){
-if (b == 0) {
-  throw Exception('not possibe to divide to zero');
+  // Short version
+  return a == b
+      ? 'equal'
+      : a > b
+      ? 'more'
+      : 'less';
 }
-
- return a / b;
-}
-
+ 
